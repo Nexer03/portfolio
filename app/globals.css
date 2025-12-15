@@ -38,3 +38,62 @@ body {
 .cursor {
   animation: cursor-blink 0.9s steps(1) infinite;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.85rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.70);
+
+  transition: transform 500ms ease, background-color 500ms ease, border-color 500ms ease, color 500ms ease;
+  will-change: transform;
+
+  animation: fadeInUp 820ms ease-out both;
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.chip:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.25);
+  outline-offset: 2px;
+}
+
+.chip-php:hover {
+  background-color: rgba(119, 123, 179, 0.15);
+  border-color: rgba(119, 123, 179, 0.40);
+}
+
+.chip-mysql:hover {
+  background-color: rgba(0, 117, 143, 0.15);
+  border-color: rgba(0, 117, 143, 0.40);
+}
+
+.chip-js:hover {
+  background-color: rgba(240, 219, 79, 0.15);
+  border-color: rgba(240, 219, 79, 0.40);
+}
+
+.chip-csharp:hover {
+  background-color: rgba(116, 33, 122, 0.15);
+  border-color: rgba(116, 33, 122, 0.40);
+}
+
