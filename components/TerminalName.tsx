@@ -44,7 +44,8 @@ export default function TerminalName({ text, speed = 150 }: TerminalNameProps) {
   }, [text, speed]);
 
   return (
-    <h2 className="font-mono text-4xl md:text-3xl text-white/90 flex items-center gap-2">
+    <h2 className="font-mono text-3xl md:text-5xl lg:text-5xl text-white/90 flex items-center gap-2">
+
       <span>{displayed}</span>
       <span className="cursor text-white/60 leading-none relative top-[1px]">
         |
