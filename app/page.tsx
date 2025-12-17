@@ -3,7 +3,10 @@ import Section from "../components/Section";
 import TerminalName from "../components/TerminalName";
 import TechCard from "../components/TechCard";
 import TechItem from "../components/TechItem";
-
+import ContactSection from "../components/ContactSection";
+import SeparadorContacto from "../components/SeparadorContacto";
+import Proyectos from "../components/Proyectos";
+import Footer from "../components/Footer";
 
 
 
@@ -34,31 +37,46 @@ export default function Home() {
             </p>
 
             <p className="text-base leading-relaxed text-white/80 md:text-left text-justify">
-              Desarrollador web freelance, enfocado en backend con PHP. Desarrollo web
-              full stack con un enfoque práctico, buena comunicación y trato
+              Desarrollador web Junior. Mantengo una buena comunicación y trato
               profesional con clientes y compañeros. Busco seguir desarrollándome como
               profesional y aprender continuamente.
             </p>
 
-            <div className="flex flex-wrap gap-2 pt-2 justify-center">
-              <div className="flex flex-wrap gap-2 pt-2 justify-center">
-                <span className="chip chip-php" style={{ animationDelay: "0ms" }}>PHP</span>
-                <span className="chip chip-mysql" style={{ animationDelay: "100ms" }}>MySQL</span>
-                <span className="chip chip-js" style={{ animationDelay: "200ms" }}>JavaScript</span>
-                <span className="chip chip-csharp" style={{ animationDelay: "300ms" }}>C#</span>
+            <div className="flex flex-col items-center pt-6 ">
+              <p className="mb-3 font-mono text-sm text-white/60 text-center">
+                Tecnologías que más domino
+              </p>
+
+              <div className="flex flex-wrap gap-2 justify-center">
+                <span className="chip chip-php" style={{ animationDelay: "0ms" }}>
+                  PHP
+                </span>
+                <span className="chip chip-mysql" style={{ animationDelay: "100ms" }}>
+                  MySQL
+                </span>
+                <span className="chip chip-js" style={{ animationDelay: "200ms" }}>
+                  JavaScript
+                </span>
+                <span className="chip chip-csharp" style={{ animationDelay: "300ms" }}>
+                  C#
+                </span>
               </div>
             </div>
+
           </div>
         </div>
       </Section>
 
+      <Section id="separador" title="">
+        <SeparadorContacto />
+      </Section>
 
-      <Section id="proyectos" title="Proyectos">
-        <p>Cards tipo terminal para cada proyecto....</p>
-        <p>Aqui va el proyecto de bienes y raices (mas importante de todos)</p>
-        <p>Aqui va el proyecto de CreceDiseño</p>
-        <p>Aqui va el proyecto de la señora en wix</p>
-        <p>Aqui van a ir el proyecto de ElJuego de terror y el de 2D como plus</p>
+      <Section id="proyectos" title="Mis Proyectos">
+        <Proyectos />
+      </Section>
+      
+      <Section id="separador" title="">
+        <SeparadorContacto />
       </Section>
 
       <Section id="tecnologias" title="Tecnologías">
@@ -141,10 +159,18 @@ export default function Home() {
         </div>
       </Section>
 
-
-      <Section id="contacto" title="Contacto">
-        <p>Email, GitHub, LinkedIn....</p>
+      <Section id="separador" title="">
+        <SeparadorContacto />
       </Section>
-    </div>
+
+      <Section id="contacto" title="">
+        <ContactSection />
+      </Section>
+   
+
+    <Section id="Footer" title="">
+      <Footer />
+    </Section>
+     </div>
   );
 }
