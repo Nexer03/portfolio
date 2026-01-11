@@ -147,12 +147,12 @@ export default function ContactSection() {
               icon={<img src="/icons/gmail.svg" alt="Email" className="h-5 w-5 invert-75" />}
             />
             <SocialIcon
-              href="https://github.com/TU_USER"
+              href="https://github.com/Nexer03"
               label="GitHub"
               icon={<img src="/icons/github.svg" alt="GitHub" className="h-5 w-5 invert-75" />}
             />
             <SocialIcon
-              href="https://linkedin.com/in/TU_USER"
+              href="https://linkedin.com/in/Chuy P"
               label="LinkedIn"
               icon={<img src="/icons/linkedin.svg" alt="LinkedIn" className="h-5 w-5 invert-75 " />}
             />

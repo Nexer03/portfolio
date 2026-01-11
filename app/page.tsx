@@ -37,9 +37,9 @@ export default function Home() {
             </p>
 
             <p className="text-base leading-relaxed text-white/80 md:text-left text-justify">
-              Desarrollador web Junior. Mantengo una buena comunicación y trato
-              profesional con clientes y compañeros. Busco seguir desarrollándome como
-              profesional y aprender continuamente.
+              Desarrollador web junior con experiencia en proyectos académicos y para clientes.
+              Me enfoco en construir interfaces limpias, lógica clara y soluciones mantenibles.
+              Mantengo comunicación constante y busco aprender continuamente.
             </p>
 
             <div className="flex flex-col items-center pt-6 ">
@@ -62,6 +62,63 @@ export default function Home() {
                 </span>
               </div>
             </div>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+                {/* Habilidades blandas */}
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+                  <p className="font-mono text-sm text-white/70">
+                    $ habilidades --blandas
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Comunicación clara
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Trabajo en equipo
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Responsabilidad
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Aprendizaje continuo
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Resolución de problemas
+                    </span>
+                    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 font-mono text-xs text-white/70">
+                      Organización
+                    </span>
+                  </div>
+
+                  <p className="mt-4 text-xs text-white/50 leading-relaxed">
+                    Me enfoco en mantener comunicación constante, dar seguimiento a tareas y entregar soluciones
+                    claras, tanto en equipo como con clientes.
+                  </p>
+                </div>
+
+                {/* Idiomas */}
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+                  <p className="font-mono text-sm text-white/70">
+                    $ habilidades --idiomas
+                  </p>
+
+                  <ul className="mt-4 space-y-2 font-mono text-xs text-white/70">
+                    <li className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-3 py-2">
+                      <span>Español</span>
+                      <span className="text-white/50">Nativo</span>
+                    </li>
+                    <li className="flex items-center justify-between rounded-xl border border-white/10 bg-black/20 px-3 py-2">
+                      <span>Inglés</span>
+                      <span className="text-white/50">B1</span>
+                    </li>
+                  </ul>
+
+                  <p className="mt-4 text-xs text-white/50">
+                    Puedo leer documentación y comunicarme a nivel intermedio o conversacional.
+                  </p>
+                </div>
+              </div>
+
 
           </div>
         </div>
@@ -71,7 +128,7 @@ export default function Home() {
         <SeparadorContacto />
       </Section>
 
-      <Section id="proyectos" title="Mis Proyectos">
+      <Section id="proyectos" title="">
         <Proyectos />
       </Section>
       
@@ -158,7 +215,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
+      
       <Section id="separador" title="">
         <SeparadorContacto />
       </Section>
