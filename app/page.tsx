@@ -198,19 +198,24 @@ export default function Home() {
               </div>
             </TechCard>
 
-            <TechCard
-              title="Plus"
-              accentClassName="text-violet-300"
-              glowClassName="bg-violet-400/20"
-            >
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 place-items-center">
-                <TechItem label="Unity" icon="/icons/unity.svg" />
-                <TechItem label="Cisco" icon="/icons/cisco.svg" />
-                <TechItem label="Linux" icon="/icons/linux.svg" />
-                <TechItem label="Ubuntu" icon="/icons/ubuntu.svg" />
-                <TechItem label="Kali Linux" icon="/icons/kalilinux.svg" />
-              </div>
-            </TechCard>
+           <div className="md:col-span-2 md:flex md:justify-center">
+  <div className="w-full md:max-w-[calc((100%-1.5rem)/2)]">
+    <TechCard
+      title="Plus"
+      accentClassName="text-violet-300"
+      glowClassName="bg-violet-400/20"
+    >
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 place-items-center">
+        <TechItem label="Unity" icon="/icons/unity.svg" />
+        <TechItem label="Cisco" icon="/icons/cisco.svg" />
+        <TechItem label="Linux" icon="/icons/linux.svg" />
+        <TechItem label="Ubuntu" icon="/icons/ubuntu.svg" />
+        <TechItem label="Kali Linux" icon="/icons/kalilinux.svg" />
+      </div>
+    </TechCard>
+  </div>
+</div>
+
 
           </div>
         </div>
