@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white pt-16">
+    <div className="min-h-screen bg-transparent text-white pt-16">
       <Header />
       <Section id="sobre-mi" title="">
         <div className="mx-auto max-w-4xl px-4">
