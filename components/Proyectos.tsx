@@ -1,6 +1,6 @@
 export default function Proyectos() {
   return (
-    <section id="proyectos" className="mx-auto max-w-5xl px-4 py-24">
+    <section id="proyectos" className="mx-auto max-w-5xl px-4">
       {/* Header */}
       <div className="mb-14 text-center">
         <h2 className="font-mono text-4xl text-white/90 tracking-tight">
