@@ -12,8 +12,8 @@ export default function Footer() {
 
         <div className="mt-4 flex justify-center gap-4">
           <FooterLink href="mailto:chuypg123@gmail.com">Email</FooterLink>
-          <FooterLink href="https://github.com/TU_USER">GitHub</FooterLink>
-          <FooterLink href="https://linkedin.com/in/TU_USER">LinkedIn</FooterLink>
+          <FooterLink href="https://github.com/Nexer03">GitHub</FooterLink>
+          <FooterLink href="https://www.linkedin.com/in/josé-de-jesús-peña-garcía-464343262">LinkedIn</FooterLink>
         </div>
       </div>
     </footer>
