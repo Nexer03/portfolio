@@ -153,7 +153,7 @@ export default function ContactSection() {
               icon={<img src="/icons/github.svg" alt="GitHub" className="h-5 w-5 invert-75" />}
             />
             <SocialIcon
-              href="https://linkedin.com/in/Chuy P"
+              href="https://www.linkedin.com/in/josé-de-jesús-peña-garcía-464343262"
               label="LinkedIn"
               icon={<img src="/icons/linkedin.svg" alt="LinkedIn" className="h-5 w-5 invert-75 " />}
             />
