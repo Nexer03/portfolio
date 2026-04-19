@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --font-geist-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-geist-mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 @theme inline {
@@ -12,33 +14,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans);
 }
 
-
+/* ========================= */
+/* Cursor Terminal */
+/* ========================= */
 @keyframes cursor-blink {
-  0%, 100% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 1;
-  }
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }
 
 .cursor {
   animation: cursor-blink 0.9s steps(1) infinite;
 }
 
+/* ========================= */
+/* Animación general */
+/* ========================= */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -50,6 +46,9 @@ body {
   }
 }
 
+/* ========================= */
+/* Chips (skills) */
+/* ========================= */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -57,13 +56,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(255, 255, 255, 0.05);
   padding: 0.25rem 0.85rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, monospace;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.70);
 
-  transition: transform 500ms ease, background-color 500ms ease, border-color 500ms ease, color 500ms ease;
-  will-change: transform;
-
+  transition: all 0.3s ease;
   animation: fadeInUp 820ms ease-out both;
 }
 
@@ -72,11 +69,7 @@ body {
   color: rgba(255, 255, 255, 0.95);
 }
 
-.chip:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.25);
-  outline-offset: 2px;
-}
-
+/* Colores específicos */
 .chip-php:hover {
   background-color: rgba(119, 123, 179, 0.15);
   border-color: rgba(119, 123, 179, 0.40);
@@ -97,3 +90,104 @@ body {
   border-color: rgba(116, 33, 122, 0.40);
 }
 
+
+
+.icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+  transition: all 0.2s ease;
+}
+
+/* ========================= */
+/* CARDS PRO (MUY IMPORTANTE) */
+/* ========================= */
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* TEXTO LEGIBLE */
+/* ========================= */
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.text-soft {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+/* Botones compartidos tipo formulario */
+.terminal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.625rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.625rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease,
+    color 220ms ease,
+    opacity 220ms ease;
+}
+
+.terminal-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.terminal-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.28);
+  outline-offset: 3px;
+}
+
+.terminal-button:disabled,
+.terminal-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.58;
+  transform: none;
+}
+
+.terminal-button-secondary {
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.terminal-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.terminal-button .icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.terminal-button:hover .icon {
+  opacity: 1;
+  transform: scale(1.1);
+}

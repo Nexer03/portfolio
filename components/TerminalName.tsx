@@ -17,8 +17,6 @@ export default function TerminalName({ text, speed = 150 }: TerminalNameProps) {
       intervalRef.current = null;
     }
 
-    setDisplayed("");
-
     let index = 0;
 
     intervalRef.current = window.setInterval(() => {
