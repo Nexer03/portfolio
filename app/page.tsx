@@ -16,6 +16,7 @@ const copy = {
   es: {
     imageAlt: "Fotografía de José de Jesús",
     role: "Ingeniero en Sistemas",
+    downloadCv: "Descargar CV",
     profileCommand: "$ cat perfil.md",
     profile:
       "Desarrollador de software Jr. enfocado en backend y soluciones full-stack. Trabajo con C#/.NET, Laravel y MySQL, creando APIs, integraciones y automatizaciones con una base clara, mantenible y orientada a resolver problemas reales.",
@@ -58,6 +59,7 @@ const copy = {
   en: {
     imageAlt: "Photo of José de Jesús",
     role: "Systems Engineer",
+    downloadCv: "Download Resume",
     profileCommand: "$ cat profile.md",
     profile:
       "Junior software developer focused on backend and full-stack solutions. I work with C#/.NET, Laravel, and MySQL, building APIs, integrations, and automations with a clear, maintainable foundation focused on solving real problems.",
@@ -122,6 +124,15 @@ export default function Home() {
             <p className="mt-5 font-mono text-2xl text-white/80">
               {t.role}
             </p>
+
+            <a
+              href="/Jose-de-Jesus-Pena-Garcia-CV.pdf"
+              download="Jose-de-Jesus-Pena-Garcia-CV.pdf"
+              className="terminal-button terminal-button-secondary mt-6"
+            >
+              <span className="text-white/45">$</span>
+              {t.downloadCv}
+            </a>
           </div>
 
           <div className="mt-10 space-y-4">
