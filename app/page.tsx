@@ -40,7 +40,7 @@ const copy = {
     languagesCommand: "$ habilidades --idiomas",
     languages: [
       { name: "Español", level: "Nativo" },
-      { name: "Inglés", level: "B2" },
+      { name: "Inglés", level: "B1" },
     ],
     languagesDescription:
       "Puedo leer documentación y comunicarme a nivel intermedio o conversacional.",
@@ -83,7 +83,7 @@ const copy = {
     languagesCommand: "$ skills --languages",
     languages: [
       { name: "Spanish", level: "Native" },
-      { name: "English", level: "B2" },
+      { name: "English", level: "B1" },
     ],
     languagesDescription:
       "I can read technical documentation and communicate at an intermediate or conversational level.",
