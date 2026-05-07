@@ -168,16 +168,14 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-2 justify-center">
-                <span className="chip chip-php" style={{ animationDelay: "0ms" }}>
+                <span className="chip chip-php" style={{ animationDelay: "150ms" }}>
                   PHP
                 </span>
-                <span className="chip chip-mysql" style={{ animationDelay: "100ms" }}>
+                <span className="chip chip-mysql" style={{ animationDelay: "275ms" }}>
                   MySQL
                 </span>
-                <span className="chip chip-js" style={{ animationDelay: "200ms" }}>
-                  JavaScript
-                </span>
-                <span className="chip chip-csharp" style={{ animationDelay: "300ms" }}>
+                
+                <span className="chip chip-csharp" style={{ animationDelay: "400ms" }}>
                   C#
                 </span>
               </div>
